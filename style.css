@@ -1,19 +1,130 @@
-*{
+* {
     box-sizing: border-box;
-    padding: 0;   
+    padding: 0;
     margin: 0;
 }
 
-#main-logo{
-    width: 200px;
+#main-logo {
+    width: 180px;
     display: block;
     margin: auto;
 }
 
-#nav-logo-area{
+#nav-logo-area {
+    margin-top: 10px;
     max-width: 250px;
+    margin-left: 2%;
 }
 
-#logo-text{
+#logo-text {
     color: white;
+    text-align: center;
+}
+
+.navbar-list-items {
+    margin-left: 10px;
+}
+
+.navbar-list-items:first-of-type {
+    margin-left: 0px;
+}
+
+#the-navbar {
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    transition: top 0.3s ease-in-out 0.1s;
+}
+
+.sticky {
+    top: -110px;
+    border: none;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
+
+#the-navbar:hover {
+    top: 0px;
+}
+
+@media (max-width: 700px) {
+    #main-logo {
+        width: 150px;
+    }
+    .navbar-list-items {
+        margin-left: 0px;
+    }
+}
+
+.carousel-item {
+    height: 100vh;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*---Firefox or edge ka Fix --*/
+
+/* .carousel-item {
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+} */
+
+.tracking-in-contract-bck-top {
+    animation: tracking-in-contract-bck-top 1s cubic-bezier(.215, .61, .355, 1.000) both
+}
+
+@keyframes tracking-in-contract-bck-top {
+    0% {
+        letter-spacing: 1em;
+        transform: translateZ(400px) translateY(-300px);
+        opacity: 0
+    }
+    40% {
+        opacity: .6
+    }
+    100% {
+        transform: translateZ(0) translateY(0);
+        opacity: 1
+    }
+}
+
+.tracking-in-contract-bck-bottom {
+    animation: tracking-in-contract-bck-bottom 3s cubic-bezier(.215, .61, .355, 1.000) both
+}
+
+@keyframes tracking-in-contract-bck-bottom {
+    0% {
+        letter-spacing: 1em;
+        transform: translateZ(400px) translateY(300px);
+        opacity: 0
+    }
+    40% {
+        opacity: .6
+    }
+    100% {
+        transform: translateZ(0) translateY(0);
+        opacity: 1
+    }
+}
+
+.central-caption {
+    padding-bottom: 20px;
+    font-size: 62px;
+}
+
+.h3-caption {
+    padding-bottom: 30%;
+    font-size: 24px;
 }
