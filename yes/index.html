@@ -2,18 +2,22 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Links</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>F1 Services | Home</title>
+    <link rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="shortcut icon" href="Images/icons/favicon.png" type="image/x-icon">
+
 </head>
 
 <body>
 
     <nav class="navbar navbar-inverse navbar-expand-md navbar-dark" id="the-navbar">
         <div id="nav-logo-area">
-            <img src="Images/f1-logo.png" class="navbar-logo" id="main-logo">
+            <img src="Images/icons/f1-logo.png" class="navbar-logo" id="main-logo">
             <p id="logo-text">A Complete IT Solution in Sectors</p>
         </div>
         <button class="navbar-toggler btn bg-dark" onclick="changeNavColor();" type="button" data-toggle="collapse"
@@ -25,31 +29,31 @@
             <ul class="navbar-nav ml-auto" id="navbar-ul">
 
                 <li class="nav-item navbar-list-items">
-                    <a class="text-light nav-link navbar-items-links" href="#">HOME</a>
+                    <a class="text-light nav-link navbar-items-links" id="active-now" href="/"><span id="active-now">
+                            HOME</span></a>
                 </li>
 
                 <li class="nav-item navbar-list-items">
-                    <a class="text-light nav-link navbar-items-links" href="#">ABOUT US</a>
+                    <a class="text-light nav-link navbar-items-links" href="/about.html">ABOUT US</a>
                 </li>
 
                 <li class="nav-item dropdown navbar-list-items">
-                    <a class="text-light nav-link dropdown-toggle navbar-items-links" href="#" id="navbarDropdown"
-                        role="button" data-toggle="dropdown">SOLUTIONS</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a href="#" class="dropdown-item">VISUAL SURVEILLANCE</a>
+                    <a class="text-light nav-link navbar-items-links" href="/solutions.html">SOLUTIONS</a>
+                    <!-- <a class="text-light nav-link dropdown-toggle navbar-items-links" href="#" id="navbarDropdown"
+                        role="button" data-toggle="dropdown">SOLUTIONS</a> -->
+                    <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a href="/visual-surveil" class="dropdown-item">VISUAL SURVEILLANCE</a>
                         <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">BIOMETRIC & RFID</a>
+                        <a href="/biometric" class="dropdown-item">BIOMETRIC & RFID</a>
                         <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">PARKING MANAGEMENT SYSTEM</a>
+                        <a href="#" class="dropdown-item">MANAGED IT SERVICES</a>
                         <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">MACHENICAL SECURITY</a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">FIRE ALARM SYSTEM</a>
-                    </div>
+                        <a href="#" class="dropdown-item">WEB AND APP DESIGN/ DEVELOPMENT</a>
+                    </div> -->
                 </li>
 
                 <li class="nav-item navbar-list-items">
-                    <a class="text-light nav-link navbar-items-links" href="#">CONTACT US</a>
+                    <a class="text-light nav-link navbar-items-links" href="/contacts.html">CONTACT US</a>
                 </li>
 
             </ul>
@@ -57,37 +61,44 @@
     </nav>
 
 
-    <div id="carouselExampleIndicators" class="parallax carousel slide custom-carousel" data-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide custom-carousel" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
         </ol>
 
         <div class="carousel-inner" role="listbox">
-            <div class="carousel-item item active" style="background-image: url('Images/im1.jpg');">
+            <div class="carousel-item item" style="background-image: url('Images/slider/im1.jpg');">
                 <div class="carousel-caption">
                     <h2 class="tracking-in-contract-bck-top central-caption">Wireless IT</h2>
                     <h3 class="tracking-in-contract-bck-bottom h3-caption">Enterprise Network</h3>
                 </div>
             </div>
-            <div class="carousel-item item" style="background-image: url('Images/im2.jpg');">
+            <div class="carousel-item item" style="background-image: url('Images/slider/im2.jpg');">
                 <div class="carousel-caption">
-                    <h2 class="tracking-in-contract-bck-top central-caption">Technology for your
+                    <h2 class="tracking-in-contract-bck-top central-caption">Tech for
                         Security</h2>
                     <h3 class="tracking-in-contract-bck-bottom h3-caption">Biometrics
                         Identification and Authentication</h3>
                 </div>
             </div>
-            <div class="carousel-item item" style="background-image: url('Images/im4.jpg');">
+            <div class="carousel-item item" style="background-image: url('Images/slider/im3.jpg');">
                 <div class="carousel-caption">
-                    <h2 class="tracking-in-contract-bck-top central-caption">Fire Alarm System</h2>
-                    <h3 class="tracking-in-contract-bck-bottom h3-caption">Keep your building safe
+                    <h2 class="tracking-in-contract-bck-top central-caption">Web/ App Development</h2>
+                    <h3 class="tracking-in-contract-bck-bottom h3-caption">Boost your Business</h3>
+                </div>
+            </div>
+            <div class="carousel-item item" style="background-image: url('Images/slider/im4.jpg');">
+                <div class="carousel-caption">
+                    <h2 class="tracking-in-contract-bck-top central-caption">Biometrics</h2>
+                    <h3 class="tracking-in-contract-bck-bottom h3-caption">Identification and Authentication
                     </h3>
                 </div>
             </div>
-            <div class="carousel-item item" style="background-image: url('Images/im5.jpg');">
+            <div class="carousel-item item active" style="background-image: url('Images/slider/im5.jpg');">
                 <div class="carousel-caption">
                     <h2 class="tracking-in-contract-bck-top central-caption">Visual Surveillance</h2>
                     <h3 class="tracking-in-contract-bck-bottom h3-caption">Network Video
@@ -108,61 +119,75 @@
 
 
 
-    <div class="parallax">
+    <div class="parallax" id="parallax1">
 
         <div id="form-div">
-            <form action="form" class="form-horizontal" id="form">
+            <form class="form-horizontal" id="form">
                 <h1 class="form-title">Tell Us Your Security need</h1>
 
                 <div>
                     <label for="name">Full Name:</label>
-                    <input type="text" name="name" placeholder="Your Name" pattern="[a-zA-Z\s]+"
-                        title="Username should only contains Alphabets and Space" required minlength="7" id="name">
+                    <input type="text" name="name" required minlength="6" placeholder="Your Name" pattern="[a-zA-Z\s]+"
+                        title="Username should only contains Alphabets and Space" id="name">
+                    <p id="nameError" class="error"></p>
 
                 </div>
 
                 <div>
                     <label for="number">Phone number:</label>
-                    <input type="number" placeholder="Your Contact" name="name" id="name">
+                    <input type="text" placeholder="Your Contact" required pattern="[0-9]+" minlength="11"
+                        maxlength="11" size="11" name="number" id="phone">
+                    <p id="phoneError" class="error"></p>
                 </div>
+
                 <div>
                     <label for="city">City:</label>
-                    <select name="city" required>
+                    <select name="city" id="city" required>
                         <option value="City" disabled selected>City</option>
                         <option value="Karachi">Karachi</option>
                         <option value="Islamabad">Islamabad</option>
                         <option value="Lahore">Lahore</option>
                     </select>
+                    <p id="cityError" class="error"></p>
                 </div>
                 <div>
                     <label for="address">Address:</label>
-                    <input type="text" name="address" placeholder="Address" id="address">
+                    <input type="text" name="address" minlength="15" required placeholder="Address" id="address">
+                    <p id="addressError" class="error"></p>
                 </div>
 
                 <div>
                     <label id="message-label" for="message">Message</label>
-                    <textarea name="message" id="message"
+                    <textarea required minlength="25" name="message" id="message"
                         placeholder="Write a message for instant response."></textarea>
+                    <p id="msgError" class="error"></p>
                 </div>
+
 
                 <div>
-                    <button type="submit" id="sub-btn" class="btn btn-primary">Submit</button>
+                    <div id="sub-btn" onclick="sendEmail();" class="btn btn-primary">Submit</div>
                 </div>
+
+
             </form>
+
+
         </div>
 
+    </div>
 
-        <div id="solution-div">
-            <div id="main-h1-div">
-                <h1>Solution We Offer</h1>
-            </div>
 
+    <div id="solution-div">
+        <div id="main-h1-div">
+            <h1>Solution We Offer</h1>
+        </div>
+        <blockquote cite="https://surveillance.com.pk/">
             <div id="solution-grid-outer-div">
                 <div id="solution-grid-div">
 
                     <div class="grid-item">
                         <div class="grid-img-div">
-                            <img src="Images/bank-icon.png" class="grid-img" alt="Bank Icons">
+                            <img src="Images/icons/bank-icon.png" class="grid-img" alt="Bank Icons">
                         </div>
                         <div>
                             <h3 class="grid-head">Banking Sector</h3>
@@ -175,118 +200,284 @@
 
                     <div class="grid-item">
                         <div class="grid-img-div">
-                            <img src="Images/bank-icon.png" class="grid-img" alt="Bank Icons">
+                            <img src="Images/icons/shop-alert.svg" class="small-icon grid-img" alt="Bank Icons">
                         </div>
                         <div>
-                            <h3 class="grid-head">Banking Sector</h3>
-                            <p>We offer the latest security technology for banking sectors. With cutting edge technology
-                                security cameras, metal detectors, bio-metrics and facial recognitions your banks will
-                                remain secured!</p>
+                            <h3 class="grid-head">Shopping & Retail</h3>
+                            <p>We are here to protect what belongs with you. Our range of smart videos, POS Solution,
+                                multi
+                                door solutions, control room operations that is enough to keep an eye what goes around
+                                the
+                                retail.</p>
                         </div>
                     </div>
 
 
                     <div class="grid-item">
                         <div class="grid-img-div">
-                            <img src="Images/bank-icon.png" class="grid-img" alt="Bank Icons">
+                            <img src="Images/icons/law-home.png" class="small-icon grid-img" alt="Bank Icons">
                         </div>
                         <div>
-                            <h3 class="grid-head">Banking Sector</h3>
-                            <p>We offer the latest security technology for banking sectors. With cutting edge technology
-                                security cameras, metal detectors, bio-metrics and facial recognitions your banks will
-                                remain secured!</p>
+                            <h3 class="grid-head">Law Enforcement</h3>
+                            <p>With high technology cameras, control room operation and maintenance staff we try our
+                                best to
+                                secure your law enforcement areas. Our security measures guarantees your security.</p>
                         </div>
                     </div>
 
 
                     <div class="grid-item">
                         <div class="grid-img-div">
-                            <img src="Images/bank-icon.png" class="grid-img" alt="Bank Icons">
+                            <img src="Images/icons/school-alert.png" class="small-icon grid-img" alt="Image not found">
                         </div>
                         <div>
-                            <h3 class="grid-head">Banking Sector</h3>
-                            <p>We offer the latest security technology for banking sectors. With cutting edge technology
-                                security cameras, metal detectors, bio-metrics and facial recognitions your banks will
-                                remain secured!</p>
+                            <h3 class="grid-head">Educational Institutes</h3>
+                            <p>We are right here to protect your educational institutes and guard its premises live
+                                never
+                                before. With our multi side security installations, walk through gates, smart video
+                                analytical solution to guard your institutes to the best extent.</p>
                         </div>
                     </div>
 
 
                     <div class="grid-item">
                         <div class="grid-img-div">
-                            <img src="Images/bank-icon.png" class="grid-img" alt="Bank Icons">
+                            <img src="Images/icons/hospital-icon.png" class="grid-img" alt="Image not found">
                         </div>
                         <div>
-                            <h3 class="grid-head">Banking Sector</h3>
-                            <p>We offer the latest security technology for banking sectors. With cutting edge technology
-                                security cameras, metal detectors, bio-metrics and facial recognitions your banks will
-                                remain secured!</p>
+                            <h3 class="grid-head">Hospitals</h3>
+                            <p>We are here to provide the overall security and safety to avoid any break-ins and crimes
+                                at
+                                hospitals. Ensure that the staff is working at their greatest potential with our high
+                                functioning multi door controllers, bio-metrics, facial recognitions, call recording,
+                                logging solutions and much more!</p>
                         </div>
                     </div>
 
 
                     <div class="grid-item">
                         <div class="grid-img-div">
-                            <img src="Images/bank-icon.png" class="grid-img" alt="Bank Icons">
+                            <img src="Images/icons/public-alert.png" class="grid-img" alt="Image not found">
                         </div>
                         <div>
-                            <h3 class="grid-head">Banking Sector</h3>
-                            <p>We offer the latest security technology for banking sectors. With cutting edge technology
-                                security cameras, metal detectors, bio-metrics and facial recognitions your banks will
-                                remain secured!</p>
+                            <h3 class="grid-head">Public Areas</h3>
+                            <p>Security Surveillance in City Public Area is one of the most appropriate ways to
+                                safeguard
+                                personal and private property. We offer bio-metrics, public address solution, under
+                                vehicle
+                                surveillance and much more to protect your spaces.</p>
                         </div>
                     </div>
 
 
                     <div class="grid-item">
                         <div class="grid-img-div">
-                            <img src="Images/bank-icon.png" class="grid-img" alt="Bank Icons">
+                            <img src="Images/icons/tele-alert.png" class="grid-img" alt="Bank Icons">
                         </div>
                         <div>
-                            <h3 class="grid-head">Banking Sector</h3>
-                            <p>We offer the latest security technology for banking sectors. With cutting edge technology
-                                security cameras, metal detectors, bio-metrics and facial recognitions your banks will
-                                remain secured!</p>
+                            <h3 class="grid-head">Telecom and Media</h3>
+                            <p>The presence of surveillance security such as hand held metal detectors, walk through
+                                gates,
+                                road blockers at Media premises improves security measures, communication methods, and
+                                worker’s productivity and improves digital storage.</p>
                         </div>
                     </div>
 
 
                     <div class="grid-item">
                         <div class="grid-img-div">
-                            <img src="Images/bank-icon.png" class="grid-img" alt="Bank Icons">
+                            <img src="Images/icons/trans-alert.png" class="grid-img" alt="Bank Icons">
                         </div>
                         <div>
-                            <h3 class="grid-head">Banking Sector</h3>
-                            <p>We offer the latest security technology for banking sectors. With cutting edge technology
-                                security cameras, metal detectors, bio-metrics and facial recognitions your banks will
-                                remain secured!</p>
+                            <h3 class="grid-head">Transportation</h3>
+                            <p>We have extensive experience in offering security solutions for transportation systems.
+                                We
+                                are here to protect your business areas from crimes and thefts, get the best security
+                                now.
+                            </p>
                         </div>
                     </div>
 
 
                     <div class="grid-item">
                         <div class="grid-img-div">
-                            <img src="Images/bank-icon.png" class="grid-img" alt="Bank Icons">
+                            <img src="Images/icons/real-alert.png" class="grid-img" alt="Bank Icons">
                         </div>
                         <div>
-                            <h3 class="grid-head">Banking Sector</h3>
-                            <p>We offer the latest security technology for banking sectors. With cutting edge technology
-                                security cameras, metal detectors, bio-metrics and facial recognitions your banks will
-                                remain secured!</p>
+                            <h3 class="grid-head">Real Estate</h3>
+                            <p>Our nationwide surveillance network will protect your real estate property. Our wide
+                                range of
+                                security deployments, IP Surveillance, fire control solutions and other services to
+                                enough
+                                to ensure that your real estate stays guarded.</p>
                         </div>
                     </div>
-
-
-
-
                 </div>
+            </div>
+        </blockquote>
+    </div>
+
+
+
+
+
+    <div id="why-choose-main-div" class="parallax">
+
+        <hr>
+        <h1 id="why-h1">Why Choose Us</h1>
+
+        <div id="why-choose-grid">
+            <div id="why-choose-inner-grid">
+                <div class="choose-inner-grid-item">
+                    <div class="choose-icons-div"><img class="choose-icons" src="Images/icons/clock.png"
+                            alt="Image not found"></div>
+                    <div class="choose-text-div">
+                        <h1 class="choose-h1">24/7 Customer Support</h1>
+                        <blockquote cite="https://surveillance.com.pk/">
+                            <p>Our experiences and supportive staff will be there at your assistance 24/7. Regardless of
+                                the
+                                situation or time, let us know and we’ll be here in moments.</p>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="choose-inner-grid-item">
+                    <div class="choose-icons-div"><img class="choose-icons" src="Images/icons/money.png"
+                            alt="Image not found"></div>
+                    <div class="choose-text-div">
+                        <h1 class="choose-h1">Reliable/ Professional</h1>
+                        <blockquote cite="https://surveillance.com.pk/">
+                            <p>We take pride in being the most reliable IP Surveillance and security services industry.
+                                We have served multiple clients around the city and reliability is our biggest asset.
+                            </p>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="choose-inner-grid-item">
+                    <div class="choose-icons-div"><img class="choose-icons" src="Images/icons/check.png"
+                            alt="Image not found"></div>
+                    <div class="choose-text-div">
+                        <h1 class="choose-h1">Budget Friendly</h1>
+                        <blockquote cite="https://surveillance.com.pk/">
+                            <p>Customer security is our top priority! We ensure that we provide budget friendly
+                                surveillance updates to our clients to maintain long-term and prosperous relationships.
+                            </p>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="choose-inner-grid-item">
+                    <div class="choose-icons-div"><img class="choose-icons" src="Images/icons/thumbs.png"
+                            alt="Image not found"></div>
+                    <div class="choose-text-div">
+                        <h1 class="choose-h1">Huge Product Range</h1>
+                        <blockquote cite="https://surveillance.com.pk/">
+                            <p>We are offering security solutions to customers however we have a wide range of security
+                                offerings to choose from. Choose according to your industry or requirements that suits
+                                best.</p>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="choose-inner-grid-item">
+                    <div class="choose-icons-div"><img class="choose-icons" src="Images/icons/chart.png"
+                            alt="Image not found"></div>
+                    <div class="choose-text-div">
+                        <h1 class="choose-h1">High Technology</h1>
+                        <blockquote cite="https://surveillance.com.pk/">
+                            <p>We stand out amongst our competitors due to our exceptional high-tech technology and
+                                equipment. We envision the best for you and the safety of your family.</p>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="choose-inner-grid-item">
+                    <div class="choose-icons-div"><img class="choose-icons" src="Images/icons/chart.png"
+                            alt="Image not found"></div>
+                    <div class="choose-text-div">
+                        <h1 class="choose-h1">Professional Staff</h1>
+                        <blockquote cite="https://surveillance.com.pk/">
+                            <p>Surveillance Security Systems owns a large team of professional and friendly employees,
+                                who the masters of their own expertise. We ensure that you are never disappointed with
+                                our members.</p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div id="clients">
+
+        <hr>
+        <h1>Our Clients</h1>
+
+        <div id="client-gallery">
+
+            <div class="client-img-containter">
+                <img src="Images/clients/yuua.jpg" alt="Image not found">
+            </div>
+
+            <div class="client-img-containter">
+                <img src="Images/clients/knit.jpg" alt="Image not found">
+            </div>
+
+            <div class="client-img-containter">
+                <img src="Images/clients/future.jpg" alt="Image not found">
+            </div>
+
+        </div>
+        <hr>
+    </div>
+
+
+    <footer>
+
+        <div id="footer-container">
+            <div class="footer-items" id="about">
+                <h3>ABOUT US</h3>
+                <blockquote cite="https://surveillance.com.pk/">
+                    <p>Our success is not only due to the quality of our
+                        works, Its down to attitude, Our approach and
+                        the way we treat our clients.</p>
+                </blockquote>
+                <img id="footer-img" src="Images/side-img/cameras.jpg" alt="Image not found">
+            </div>
+            <div class="footer-items" id="contact">
+                <h3 style="margin-bottom: 25px;">CONTACT</h3>
+
+                <div class="contact-details">
+                    <p> <img src="Images/icons/map.png" alt="email"> Address</p>
+                </div>
+
+
+                <div class="contact-details">
+                    <p> <img src="Images/icons/email.png" alt="email">
+                        <a href="mailto:shaheerhaider00000@gmail.com"> shaheerhaider00000@gmail.com</a></p>
+                </div>
+
+                <div class="contact-details">
+                    <p> <img src="Images/icons/phone.png" alt="email">
+                        <a href="tel:03462615589"> +92 346 2615589</a></p>
+                </div>
+
             </div>
         </div>
 
+        <div style="display: none;">
+            <a href="https://icons8.com/icon/121243/phone">Phone icon by Icons8</a>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+
+
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="script.js"></script>
+
 
 </html>
